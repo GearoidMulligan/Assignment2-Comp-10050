@@ -15,6 +15,6 @@ int main() {
 
     initialize_board(board);
 
-    //print_board(board);
+    print_board(board);
     return 0;
 }

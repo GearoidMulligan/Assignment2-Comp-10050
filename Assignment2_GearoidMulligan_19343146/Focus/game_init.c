@@ -4,10 +4,11 @@
 #include <stdbool.h>
 #include "game_init.h"
 
+//initalizing players
 void initialize_players(player players[PLAYERS_NUM]){
 
     for (int i=0;i<PLAYERS_NUM;i++) {
-        printf("Enter player %d's name: ", i);
+        printf("Enter player %d's name: ", i+1);
         scanf("%s", &players[i].name);
         players[i].own_pieces=18;
         players[i].opp_pieces=0;
@@ -20,18 +21,17 @@ void initialize_players(player players[PLAYERS_NUM]){
         if(check==1) {
             players[0].player_color = RED;
             players[1].player_color = GREEN;
-            printf("Player 1 chose red!,Player 2 is green!\n");
+            printf("\nPlayer 1 chose red!,Player 2 is green!\n");
             x=true;
         } else if (check==2){
             players[1].player_color = RED;
             players[0].player_color = GREEN;
-            printf("Player 1 chose green!,Player 2 is red!\n");
+            printf("\nPlayer 1 chose green!,Player 2 is red!\n");
             x=true;
         }
 
     }
 
-    // implement here the functionality to initialize the players
 
 }
 

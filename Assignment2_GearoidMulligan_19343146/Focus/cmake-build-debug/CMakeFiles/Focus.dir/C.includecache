@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/gearo/OneDrive/Desktop/Assignment2_GearoidMulligan_19343146/Focus/game_init.c
-stdio.h
--
-stdlib.h
--
-stdbool.h
--
-game_init.h
-C:/Users/gearo/OneDrive/Desktop/Assignment2_GearoidMulligan_19343146/Focus/game_init.h
-
 C:/Users/gearo/OneDrive/Desktop/Assignment2_GearoidMulligan_19343146/Focus/game_init.h
 
 C:/Users/gearo/OneDrive/Desktop/Assignment2_GearoidMulligan_19343146/Focus/input_output.c
@@ -27,10 +17,4 @@ C:/Users/gearo/OneDrive/Desktop/Assignment2_GearoidMulligan_19343146/Focus/input
 C:/Users/gearo/OneDrive/Desktop/Assignment2_GearoidMulligan_19343146/Focus/input_output.h
 game_init.h
 C:/Users/gearo/OneDrive/Desktop/Assignment2_GearoidMulligan_19343146/Focus/game_init.h
-
-C:/Users/gearo/OneDrive/Desktop/Assignment2_GearoidMulligan_19343146/Focus/main.c
-stdio.h
--
-input_output.h
-C:/Users/gearo/OneDrive/Desktop/Assignment2_GearoidMulligan_19343146/Focus/input_output.h
 
