@@ -1,0 +1,3 @@
+C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/cmake-build-debug/CMakeFiles/Project.dir
+C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
