@@ -10,11 +10,11 @@ void player_turn (player players[PLAYERS_NUM],square board[BOARD_SIZE][BOARD_SIZ
     bool check = false;
 
     while (check == false) {
-        printf("Player %d turn, Select which piece you would like to move (x,y): ", z);
+        printf("Player %d turn, Select which piece you would like to move (r,c): ", z);
         scanf("%d,%d", &a, &b);
 
 
-        if (board[a][b].type == VALID && board[a][b].stack->p_color == players[z - 1].player_color) {
+        if ((board[a][b].type == VALID) && (board[a][b].stack->p_color == players[z - 1].player_color)) {
             printf("Valid Piece\n");
             check = true;
         } else {
@@ -26,15 +26,15 @@ void player_turn (player players[PLAYERS_NUM],square board[BOARD_SIZE][BOARD_SIZ
 
     while (check == false) {
 
-        printf("Player %d, where would you like to move the piece?(x,y)", z);
+        printf("Player %d, where would you like to move the piece?(r,c)", z);
         scanf("%d,%d", &c, &d);
 
 
-        if (((a - c) + (b - d)) == board[a][b].num_pieces || ((c - a) + (d - b)) == board[a][b].num_pieces) {
+        if ((((a - c) + (b - d)) == board[a][b].num_pieces || ((c - a) + (d - b)) == board[a][b].num_pieces)&&(board[a][b].type==VALID)) {
             printf("Valid Move\n");
             check = true;
         } else {
-            printf("Invalid move, move a piece the same number as stacks on the square:");
+            printf("Invalid move, move a piece the same number as stacks on the square or to a valid square:");
         }
     }
 
@@ -77,19 +77,26 @@ void player_turn (player players[PLAYERS_NUM],square board[BOARD_SIZE][BOARD_SIZ
                 board[c][d].num_pieces++;
             } else {
                 last = curr;
+                if (last != NULL) {
+                    curr = curr->next;
+                }
+                while (curr != NULL) {
+                    piece *toRemove = curr;
+                    if(toRemove->p_color==players[z - 1].player_color){
+                        players->own_pieces++;
+                    }
+                    else{
+                        players->opp_pieces++;
+                    }
+                    curr = curr->next;
+                    free(toRemove);
+                }
+                last->next = NULL;
             }
         }
 
 
-        if (last != NULL) {
-            curr = curr->next;
-        }
-        while (curr != NULL) {
-            piece *toRemove = curr;
-            curr = curr->next;
-            free(toRemove);
-        }
-        last->next = NULL;
+
     }
 
 }
