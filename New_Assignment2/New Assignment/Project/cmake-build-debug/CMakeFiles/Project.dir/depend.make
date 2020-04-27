@@ -11,7 +11,11 @@ CMakeFiles/Project.dir/input_output.c.obj: ../input_output.h
 CMakeFiles/Project.dir/main.c.obj: ../game_init.h
 CMakeFiles/Project.dir/main.c.obj: ../input_output.h
 CMakeFiles/Project.dir/main.c.obj: ../main.c
+CMakeFiles/Project.dir/main.c.obj: ../move_stacks.h
 CMakeFiles/Project.dir/main.c.obj: ../player_move.h
+
+CMakeFiles/Project.dir/move_stacks.c.obj: ../game_init.h
+CMakeFiles/Project.dir/move_stacks.c.obj: ../move_stacks.c
 
 CMakeFiles/Project.dir/player_move.c.obj: ../game_init.h
 CMakeFiles/Project.dir/player_move.c.obj: ../player_move.c

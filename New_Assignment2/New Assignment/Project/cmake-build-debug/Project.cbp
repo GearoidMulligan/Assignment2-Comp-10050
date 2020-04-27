@@ -91,6 +91,12 @@
 		<Unit filename="C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/main.c">
 			<Option target="Project"/>
 		</Unit>
+		<Unit filename="C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/move_stacks.c">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/move_stacks.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/player_move.c">
 			<Option target="Project"/>
 		</Unit>
