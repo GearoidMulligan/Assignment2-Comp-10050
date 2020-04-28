@@ -61,5 +61,9 @@ void initialize_players(player players[PLAYERS_NUM]);
 //Function to create the board
 void initialize_board(square board[BOARD_SIZE][BOARD_SIZE]);
 
+void initialize_spare(square spare[0][0]);
+
+
+
 
 #endif //PROJECT_GAME_INIT_H

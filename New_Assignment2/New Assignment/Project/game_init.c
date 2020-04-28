@@ -9,7 +9,7 @@ void initialize_players(player players[PLAYERS_NUM]){
     for (int i=0;i<PLAYERS_NUM;i++) {
         printf("Enter player %d's name: ", i+1);
         scanf("%s", &players[i].name);
-        players[i].own_pieces=18;
+        players[i].own_pieces=0;
         players[i].opp_pieces=0;
     }
     bool x=false;
@@ -96,7 +96,10 @@ void initialize_board(square board [BOARD_SIZE][BOARD_SIZE]){
 
     }
 
+}
 
+void initialize_spare(square spare[0][0]){
+    set_empty(&spare[0][0]);
 }
 
 

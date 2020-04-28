@@ -26,7 +26,6 @@ void print_board(square board[BOARD_SIZE][BOARD_SIZE]){
             else
                 printf("| - ");
 
-
         }
         printf("|\n");
     }
