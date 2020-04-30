@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/check_game.c" "C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/cmake-build-debug/CMakeFiles/Project.dir/check_game.c.obj"
   "C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/game_init.c" "C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/cmake-build-debug/CMakeFiles/Project.dir/game_init.c.obj"
   "C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/input_output.c" "C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/cmake-build-debug/CMakeFiles/Project.dir/input_output.c.obj"
   "C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/main.c" "C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/cmake-build-debug/CMakeFiles/Project.dir/main.c.obj"
-  "C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/move_stacks.c" "C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/cmake-build-debug/CMakeFiles/Project.dir/move_stacks.c.obj"
   "C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/player_move.c" "C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/cmake-build-debug/CMakeFiles/Project.dir/player_move.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

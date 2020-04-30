@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Project.dir/check_game.c.obj"
   "CMakeFiles/Project.dir/game_init.c.obj"
   "CMakeFiles/Project.dir/input_output.c.obj"
   "CMakeFiles/Project.dir/main.c.obj"
-  "CMakeFiles/Project.dir/move_stacks.c.obj"
   "CMakeFiles/Project.dir/player_move.c.obj"
   "Project.exe"
   "Project.exe.manifest"

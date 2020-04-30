@@ -108,18 +108,18 @@ CMakeFiles/Project.dir/player_move.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project.dir/player_move.c.s"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\gearo\OneDrive\Desktop\New Assignment\Project\player_move.c" -o CMakeFiles\Project.dir\player_move.c.s
 
-CMakeFiles/Project.dir/move_stacks.c.obj: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/move_stacks.c.obj: ../move_stacks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\gearo\OneDrive\Desktop\New Assignment\Project\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Project.dir/move_stacks.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project.dir\move_stacks.c.obj   -c "C:\Users\gearo\OneDrive\Desktop\New Assignment\Project\move_stacks.c"
+CMakeFiles/Project.dir/check_game.c.obj: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/check_game.c.obj: ../check_game.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\gearo\OneDrive\Desktop\New Assignment\Project\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Project.dir/check_game.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project.dir\check_game.c.obj   -c "C:\Users\gearo\OneDrive\Desktop\New Assignment\Project\check_game.c"
 
-CMakeFiles/Project.dir/move_stacks.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project.dir/move_stacks.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\gearo\OneDrive\Desktop\New Assignment\Project\move_stacks.c" > CMakeFiles\Project.dir\move_stacks.c.i
+CMakeFiles/Project.dir/check_game.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project.dir/check_game.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\gearo\OneDrive\Desktop\New Assignment\Project\check_game.c" > CMakeFiles\Project.dir\check_game.c.i
 
-CMakeFiles/Project.dir/move_stacks.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project.dir/move_stacks.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\gearo\OneDrive\Desktop\New Assignment\Project\move_stacks.c" -o CMakeFiles\Project.dir\move_stacks.c.s
+CMakeFiles/Project.dir/check_game.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project.dir/check_game.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\gearo\OneDrive\Desktop\New Assignment\Project\check_game.c" -o CMakeFiles\Project.dir\check_game.c.s
 
 # Object files for target Project
 Project_OBJECTS = \
@@ -127,7 +127,7 @@ Project_OBJECTS = \
 "CMakeFiles/Project.dir/game_init.c.obj" \
 "CMakeFiles/Project.dir/input_output.c.obj" \
 "CMakeFiles/Project.dir/player_move.c.obj" \
-"CMakeFiles/Project.dir/move_stacks.c.obj"
+"CMakeFiles/Project.dir/check_game.c.obj"
 
 # External object files for target Project
 Project_EXTERNAL_OBJECTS =
@@ -136,7 +136,7 @@ Project.exe: CMakeFiles/Project.dir/main.c.obj
 Project.exe: CMakeFiles/Project.dir/game_init.c.obj
 Project.exe: CMakeFiles/Project.dir/input_output.c.obj
 Project.exe: CMakeFiles/Project.dir/player_move.c.obj
-Project.exe: CMakeFiles/Project.dir/move_stacks.c.obj
+Project.exe: CMakeFiles/Project.dir/check_game.c.obj
 Project.exe: CMakeFiles/Project.dir/build.make
 Project.exe: CMakeFiles/Project.dir/linklibs.rsp
 Project.exe: CMakeFiles/Project.dir/objects1.rsp

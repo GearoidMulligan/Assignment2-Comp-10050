@@ -4,8 +4,7 @@
 
 #include "input_output.h"
 #include "player_move.h"
-#include "move_stacks.h"
-
+#include "check_game.h"
 
 
 int main() {
@@ -23,14 +22,14 @@ int main() {
     initialize_spare(spare);
 
 
-while(x!=2){
+while(x== 0){
    player_turn(players, board, 1,spare);
    print_board(board);
    player_turn(players, board, 2,spare);
    print_board(board);
-   x++;
+   x = end_con(board,players);
 }
-
+ ending(players,x);
 
     return 0;
 }

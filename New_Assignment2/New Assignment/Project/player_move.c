@@ -6,7 +6,6 @@
 
 void player_turn (player players[PLAYERS_NUM],square board[BOARD_SIZE][BOARD_SIZE],int z,square spare[0][0]) {
 
-
     int a, b;
     int c, d;
     bool check = false;
@@ -18,7 +17,7 @@ void player_turn (player players[PLAYERS_NUM],square board[BOARD_SIZE][BOARD_SIZ
 
         if(a==10&&b==10){
             if(players[z-1].own_pieces==0){
-                printf("You have no spare pieces to use");
+                printf("You have no spare pieces to use.\n");
             }
             else{
                 printf("Player %d, where would you like to place the piece?(r,c):", z);
@@ -31,7 +30,7 @@ void player_turn (player players[PLAYERS_NUM],square board[BOARD_SIZE][BOARD_SIZ
                     }
                 }
 
-        else if ((board[a][b].type == VALID) && (board[a][b].stack->p_color == players[z - 1].player_color)) {
+        else if ((board[a][b].type == VALID) && (board[a][b].stack->p_color == players[z - 1].player_color)&&(board[a][b].stack!=NULL)) {
             printf("Valid Piece\n");
             check = true;
         } else {
@@ -51,20 +50,20 @@ void player_turn (player players[PLAYERS_NUM],square board[BOARD_SIZE][BOARD_SIZ
             printf("Valid Move\n");
             check = true;
         } else {
-            printf("Invalid move, move a piece the same number as stacks on the square or to a valid square:");
+            printf("Invalid move, move a piece the same number as stacks on the square or to a valid square.\n");
         }
     }
 
 
     if (board[c][d].stack==NULL){
         piece *top = board[a][b].stack;
+        board[c][d].stack = (piece *) malloc(sizeof(piece));
         piece *curr = top;
         while (curr->next != NULL) {
             curr = curr->next;
         }
         curr->next = board[c][d].stack;
-        board[c][d].num_pieces=board[a][b].num_pieces;
-        board[a][b].num_pieces=0;
+        board[c][d].stack->p_color=players[z-1].player_color;
         board[a][b].stack = NULL;
     }
     else {
@@ -72,8 +71,6 @@ void player_turn (player players[PLAYERS_NUM],square board[BOARD_SIZE][BOARD_SIZ
         piece *top = board[a][b].stack;
 
         piece *curr = top;
-        board[a][b].stack = NULL;
-        board[a][b].num_pieces = 0;
         while (curr->next != NULL) {
             curr = curr->next;
         }
@@ -81,17 +78,14 @@ void player_turn (player players[PLAYERS_NUM],square board[BOARD_SIZE][BOARD_SIZ
         curr->next = board[c][d].stack;
 
         board[c][d].stack = top;
-
-
+        board[a][b].stack = NULL;
         int count = 1;
-        board[c][d].num_pieces = 0;
         piece *last = NULL;
 
         while (curr != NULL) {
             if (count < 5) {
                 curr = curr->next;
                 count++;
-                board[c][d].num_pieces++;
             } else {
                 last = curr;
             }
@@ -110,7 +104,6 @@ void player_turn (player players[PLAYERS_NUM],square board[BOARD_SIZE][BOARD_SIZ
                     }
                     last->next = NULL;
                 }
-
         }
 
     }
@@ -125,14 +118,12 @@ void spare_piece(player players[PLAYERS_NUM],square board[BOARD_SIZE][BOARD_SIZE
             board[c][d].stack = (piece *) malloc(sizeof(piece));
             board[c][d].stack->p_color = RED;
             board[c][d].stack->next = NULL;
-            board[c][d].num_pieces = 1;
         }
         else{
             board[c][d].type = VALID;
             board[c][d].stack = (piece *) malloc (sizeof(piece));
             board[c][d].stack->p_color = GREEN;
             board[c][d].stack->next = NULL;
-            board[c][d].num_pieces = 1;
         }
 
     }
@@ -141,11 +132,10 @@ void spare_piece(player players[PLAYERS_NUM],square board[BOARD_SIZE][BOARD_SIZE
         spare[0][0].stack = (piece *) malloc(sizeof(piece));
         spare[0][0].stack->p_color = players[z-1].player_color;
         spare[0][0].stack->next = NULL;
-        spare[0][0].num_pieces = 1;
 
         piece *top = spare[0][0].stack;
         piece *curr = top;
-        
+
         spare[0][0].stack=NULL;
         while (curr->next != NULL) {
             curr = curr->next;
@@ -157,14 +147,12 @@ void spare_piece(player players[PLAYERS_NUM],square board[BOARD_SIZE][BOARD_SIZE
 
 
         int count = 1;
-        board[c][d].num_pieces = 0;
         piece *last = NULL;
 
         while (curr != NULL) {
             if (count < 5) {
                 curr = curr->next;
                 count++;
-                board[c][d].num_pieces++;
             } else {
                 last = curr;
             }
@@ -185,7 +173,6 @@ void spare_piece(player players[PLAYERS_NUM],square board[BOARD_SIZE][BOARD_SIZE
             }
 
         }
-
 
     }
 }

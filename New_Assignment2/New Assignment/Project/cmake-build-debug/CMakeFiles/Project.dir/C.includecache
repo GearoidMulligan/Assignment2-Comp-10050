@@ -6,19 +6,25 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/game_init.h
-
-C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/player_move.c
-player_move.h
-C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/player_move.h
-stdio.h
--
-stdbool.h
--
-stdlib.h
--
+C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/check_game.h
 game_init.h
 C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/game_init.h
+
+C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/game_init.h
+
+C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/input_output.h
+game_init.h
+C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/game_init.h
+
+C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/main.c
+stdio.h
+-
+input_output.h
+C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/input_output.h
+player_move.h
+C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/player_move.h
+check_game.h
+C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/check_game.h
 
 C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/player_move.h
 game_init.h

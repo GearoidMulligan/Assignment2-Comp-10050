@@ -122,6 +122,33 @@ Project/fast:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/build
 .PHONY : Project/fast
 
+check_game.obj: check_game.c.obj
+
+.PHONY : check_game.obj
+
+# target to build an object file
+check_game.c.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/check_game.c.obj
+.PHONY : check_game.c.obj
+
+check_game.i: check_game.c.i
+
+.PHONY : check_game.i
+
+# target to preprocess a source file
+check_game.c.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/check_game.c.i
+.PHONY : check_game.c.i
+
+check_game.s: check_game.c.s
+
+.PHONY : check_game.s
+
+# target to generate assembly for a file
+check_game.c.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/check_game.c.s
+.PHONY : check_game.c.s
+
 game_init.obj: game_init.c.obj
 
 .PHONY : game_init.obj
@@ -203,33 +230,6 @@ main.c.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/main.c.s
 .PHONY : main.c.s
 
-move_stacks.obj: move_stacks.c.obj
-
-.PHONY : move_stacks.obj
-
-# target to build an object file
-move_stacks.c.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/move_stacks.c.obj
-.PHONY : move_stacks.c.obj
-
-move_stacks.i: move_stacks.c.i
-
-.PHONY : move_stacks.i
-
-# target to preprocess a source file
-move_stacks.c.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/move_stacks.c.i
-.PHONY : move_stacks.c.i
-
-move_stacks.s: move_stacks.c.s
-
-.PHONY : move_stacks.s
-
-# target to generate assembly for a file
-move_stacks.c.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/move_stacks.c.s
-.PHONY : move_stacks.c.s
-
 player_move.obj: player_move.c.obj
 
 .PHONY : player_move.obj
@@ -266,6 +266,9 @@ help:
 	@echo ... Project
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... check_game.obj
+	@echo ... check_game.i
+	@echo ... check_game.s
 	@echo ... game_init.obj
 	@echo ... game_init.i
 	@echo ... game_init.s
@@ -275,9 +278,6 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... move_stacks.obj
-	@echo ... move_stacks.i
-	@echo ... move_stacks.s
 	@echo ... player_move.obj
 	@echo ... player_move.i
 	@echo ... player_move.s

@@ -76,6 +76,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/check_game.c">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/check_game.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/game_init.c">
 			<Option target="Project"/>
 		</Unit>
@@ -89,12 +95,6 @@
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/main.c">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/move_stacks.c">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/move_stacks.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="C:/Users/gearo/OneDrive/Desktop/New Assignment/Project/player_move.c">
