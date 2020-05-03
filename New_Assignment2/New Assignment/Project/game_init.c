@@ -6,6 +6,7 @@
 //initalizing players
 void initialize_players(player players[PLAYERS_NUM]){
 
+    //adding player names into player struct
     for (int i=0;i<PLAYERS_NUM;i++) {
         printf("Enter player %d's name: ", i+1);
         scanf("%s", &players[i].name);
@@ -14,9 +15,11 @@ void initialize_players(player players[PLAYERS_NUM]){
     }
     bool x=false;
     int check;
+    //boolean algebra used to ensure that player enter 1 or 2
     while(x == false){
         printf("Please choose a color for player 1, choose 1 for red, 2 for green: ");
         scanf("%d",&check);
+        //color assigned to player based on whether they use 1 or 2
         if(check==1) {
             players[0].player_color = RED;
             players[1].player_color = GREEN;
@@ -98,6 +101,7 @@ void initialize_board(square board [BOARD_SIZE][BOARD_SIZE]){
 
 }
 
+//function to add a spare piece onto a stack
 void initialize_spare(square spare[0][0]){
     set_empty(&spare[0][0]);
 }

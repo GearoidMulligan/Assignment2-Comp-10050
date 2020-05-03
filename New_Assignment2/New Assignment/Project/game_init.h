@@ -26,7 +26,9 @@ typedef enum square_type {
 typedef struct player{
     //the color associated with the player
     color player_color;
+    //player name
     char name [PLAYER_NAME];
+    //used to keep track of spare pieces and opponents captured pieces
     int opp_pieces;
     int own_pieces;
 }player;
@@ -61,6 +63,7 @@ void initialize_players(player players[PLAYERS_NUM]);
 //Function to create the board
 void initialize_board(square board[BOARD_SIZE][BOARD_SIZE]);
 
+//function to create spare piece to add to a stack
 void initialize_spare(square spare[0][0]);
 
 

@@ -29,7 +29,7 @@ void print_board(square board[BOARD_SIZE][BOARD_SIZE]) {
         printf("|\n");
     }
 
-
+//used to count pieces, implemented similarly to the print board function
     printf("************Pieces*************\n");
 
     for (int i = 0; i < BOARD_SIZE; i++) {
@@ -38,8 +38,8 @@ void print_board(square board[BOARD_SIZE][BOARD_SIZE]) {
                 if (board[i][j].stack == NULL)
                     printf("| 0 ");
                 else {
-                    printf("| %d ", count_stack(board[i][j].stack));
-                    board[i][j].num_pieces=count_stack(board[i][j].stack);
+                    printf("| %d ", count_stack(board[i][j].stack));//count stack function used to count stack below on line 68
+                    board[i][j].num_pieces=count_stack(board[i][j].stack);//letting the returned stack value = the board num pieces which is needed for the game logic in player_move.c
                 }
             } else
                 printf("| - ");
@@ -50,7 +50,7 @@ void print_board(square board[BOARD_SIZE][BOARD_SIZE]) {
 }
 
 
-    void ending(player players[PLAYERS_NUM], int x) {
+    void ending(player players[PLAYERS_NUM], int x) {//function to display the stats of the winner
 
         if (x == 1) {
             printf("Player 1 wins!!!\n");
@@ -64,7 +64,7 @@ void print_board(square board[BOARD_SIZE][BOARD_SIZE]) {
 
 
     }
-
+//function used to count the size of the stacks on each valid board
     int count_stack(piece *s) {
         int count = 1;
 
@@ -73,7 +73,7 @@ void print_board(square board[BOARD_SIZE][BOARD_SIZE]) {
             count++;
         }
 
-        return count;
+        return count;//count is returned back to line 41
 
 
     }
